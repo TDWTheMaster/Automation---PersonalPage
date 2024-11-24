@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Principal</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header__superior">
+            <div class="logo">
+                <img src="img/logo.PNG" alt="Logo">
+            </div>
+        </div>
+        <div class="container__menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="selected"></a></li>
+                    <li><a href="newton/biografia.html">Newton</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="cursos.html">Temas</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="#" id="logoutButton">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Bienvenido a la página principal</h2>
+        <p>¡Has iniciado sesión correctamente!</p>
+    </main>
+
+    <script>
+        if (!localStorage.getItem('isLoggedIn')) {
+            window.location.href = 'login.html';
+        }
+        const logoutButton = document.getElementById('logoutButton');
+        logoutButton.addEventListener('click', function(event) {
+            event.preventDefault(); 
+            localStorage.removeItem('isLoggedIn'); 
+            window.location.href = 'login.html'; 
+        });
+    </script>
+</body>
+</html>
