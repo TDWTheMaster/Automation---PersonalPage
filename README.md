@@ -2,10 +2,10 @@
 > [!NOTE]
 **Automation - PersonalPage**: This is an automation project made in python, based on a personal project, you will find related screenshots as well as a report of all the use cases.
 **Web page**: I attached the page here, but I uploaded it to the web anyway to make things easier for myself. Here I will leave its URL. The user is: admin and the password is: 123.
+<a href="https://webautomatizacion.netlify.app/login.html">
+  <img src="https://img.shields.io/badge/Website-0073e6?style=flat&logo=web&logoColor=white" alt="Website">
+</a>
 
-```text
-   https://webautomatizacion.netlify.app/login.html
-   ```
 
 > [!IMPORTANT]
 > To run this automation project, **YOU MUST RUN THIS COMMAND FOR ITS EXECUTION.**
